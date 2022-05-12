@@ -23,9 +23,14 @@ public class DriverController {
     @Resource
     private DriverService driverService;
 
-    @GetMapping("/zhaomu/sign")
+    @PostMapping("/zhaomu/sign")
     public DataResult sign(@Valid SouguZhaomuDriver vo) {
         SouguZhaomuDriver driver = driverService.sign(vo);
         return DataResult.success(driver);
+    }
+
+    @GetMapping("/demo")
+    public DataResult demo(@Valid SouguZhaomuDriver vo) {
+        return DataResult.success("test ok ...");
     }
 }

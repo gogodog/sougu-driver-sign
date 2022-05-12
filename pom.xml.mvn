@@ -13,7 +13,6 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>sougu-driver-sign</name>
     <description>SouGu project for Spring Boot</description>
-    <packaging>war</packaging>
 
     <properties>
         <java.version>1.8</java.version>
@@ -30,18 +29,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <!--打包不参与-->
-        <dependency>
-            <groupId>org.apache.tomcat.embed</groupId>
-            <artifactId>tomcat-embed-jasper</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <!--打包不参与，也就是打包去掉tomcat-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-tomcat</artifactId>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -123,7 +110,6 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <fork>true</fork>
-                    <mainClass>com.pw.diss8.Diss8TomcatApplication</mainClass>
                 </configuration>
             </plugin>
             <plugin>

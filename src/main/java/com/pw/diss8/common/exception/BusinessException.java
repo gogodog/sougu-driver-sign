@@ -42,6 +42,15 @@ public class BusinessException extends RuntimeException {
         this(code.getCode(), code.getMsg());
     }
 
+    /**
+     * 构造函数
+     *
+     * @param code 异常码
+     */
+    public BusinessException(BaseResponseCode code) {
+        this(code.getCode(), code.getMsg());
+    }
+
     public int getMessageCode() {
         return messageCode;
     }

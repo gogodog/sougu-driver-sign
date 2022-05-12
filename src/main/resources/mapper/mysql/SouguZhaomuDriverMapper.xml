@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pw.diss8.mapper.SouguZhaomuDriverMapper">
+  <resultMap id="BaseResultMap" type="com.pw.diss8.entity.SouguZhaomuDriver">
+    <constructor>
+      <idArg column="id" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="user_code" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="password" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="phone" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="real_name" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="nick_name" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="email" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="sex" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="driver_age" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="driver_city" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="identity_card_a" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="identity_card_b" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="driving_lic_a" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="driving_lic_b" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="invitation_info" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="invitation_method" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="team_id" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="status" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="deleted" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="from_where" javaType="java.lang.Integer" jdbcType="INTEGER" />
+      <arg column="create_id" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="update_id" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="create_time" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="update_time" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+    </constructor>
+  </resultMap>
+</mapper>
